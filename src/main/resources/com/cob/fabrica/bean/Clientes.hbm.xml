@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/03/2019 17:15:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.cob.fabrica.bean.Clientes" table="clientes" catalog="ploteos" optimistic-lock="version">
+        <id name="idCliente" type="int">
+            <column name="idCliente" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="40" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" length="40" />
+        </property>
+        <property name="celular" type="java.lang.Long">
+            <column name="celular" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="80" />
+        </property>
+        <property name="whatapp" type="java.lang.Long">
+            <column name="whatapp" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="100" />
+        </property>
+         <property name="cuit" type="string">
+            <column name="cuit" length="12" />
+        </property>
+    </class>
+</hibernate-mapping>
